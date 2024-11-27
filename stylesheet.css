@@ -27,12 +27,45 @@ h1 {
     margin-left: 3rem;
     margin-top: 8rem;
     line-height: 1.2;
-    border: 2px solid red;
+}
+h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-left: 3rem;
 }
 p {
     font-size: 1.8rem;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
     margin-left: 3rem;
-    border: 2px solid blue;
+
+}
+.forms {
+    font-size: 1.2rem;
+}
+label {
+    margin-right: 5rem;
+    display: inline-block;
+}
+input {
+    display: block;
+    border-radius: 0.6rem;
+    border: 2px solid #E5E7EB;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 300px;
+    height: 25px;
+}
+input:invalid {
+    border-color: red;
+}
+input:valid {
+    border-color: green;
+}
+input:focus {
+    border-color: lightskyblue;
 }
 
 

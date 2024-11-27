@@ -12,29 +12,33 @@
                 One day, we may or may not offer trips to South Korea.<br>
                 For now, you can always <em>sign up</em> to receive <em>nothing</em>.
         </h1>
-        <p>Don't we all want to receive nothing for free?</p>
+        <h2>Don't we all want to receive nothing for free?</h2>
         <div class='form-container'>
-            <form action="post">
-                <fieldset>
-                    <legend>Let's do this!</legend>
-                    <label for="">First Name</label>
-                    <input type="text">
-
-                    <label for="">Last Name</label>
-                    <input type="text">
-
-                    <label for="">Email</label>
-                    <input type="text">
-
-                    <label for="">Phone Number</label>
-                    <input type="text">
-
-                    <label for="">Password</label>
-                    <input type="text">
-
-                    <label for="">Confirm Password</label>
-                    <input type="text">
-                </fieldset>
+            <form action='post'>
+                <p class='forms'>
+                    <label for='first_name'>*FIRST NAME
+                        <input type="text" id='first_name' name='first_name'>
+                    </label>
+                    <label for='last_name'>*LAST NAME
+                        <input type="text" id='last_name' name='last_name'>
+                    </label>
+                </p>
+                <p class='forms'>
+                    <label for='email'>*EMAIL
+                        <input type='email' id='email' name='email' required>
+                    </label>
+                    <label for=''>PHONE NUMBER
+                        <input type='text'>
+                    </label>
+                </p>
+                <p class='forms'>
+                    <label for='user_password'>*PASSWORD
+                        <input type='password' id='user_password' name='user_password' required minlength='12'>
+                    </label>
+                    <label for='user_password'>*CONFIRM PASSWORD
+                        <input type='password' id='user_password' name='user_password' required minlength='12'>
+                    </label>
+                </p>
             </form>
         </div>
     </div> 
