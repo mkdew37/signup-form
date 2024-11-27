@@ -1,1 +1,39 @@
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('./fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./fonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    background:
+        url(./images/photo-1570191913384-7b4ff11716e7.avif)
+        no-repeat
+        left top / 40vw auto,
+        linear-gradient(to right, lightgrey 60vw, lightgrey 100%);
+        font-family:'oswaldregular', 'Times New Roman', Times, serif;
+        font-size: 16px; 
+}
+.main {
+    border: 3px solid red;
+    width: 60vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+h1 {
+    font-size: 2rem;
+    margin-left: 3rem;
+    margin-top: 8rem;
+    line-height: 1.2;
+    border: 2px solid red;
+}
+p {
+    font-size: 1.8rem;
+    margin-left: 3rem;
+    border: 2px solid blue;
+}
+
+
 
