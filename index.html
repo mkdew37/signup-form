@@ -17,18 +17,18 @@
             <form action='post'>
                 <p class='forms'>
                     <label for='first_name'>*FIRST NAME
-                        <input type="text" id='first_name' name='first_name'>
+                        <input type="text" id='first_name' name='first_name' required>
                     </label>
                     <label for='last_name'>*LAST NAME
-                        <input type="text" id='last_name' name='last_name'>
+                        <input type="text" id='last_name' name='last_name' required>
                     </label>
                 </p>
                 <p class='forms'>
                     <label for='email'>*EMAIL
                         <input type='email' id='email' name='email' required>
                     </label>
-                    <label for=''>PHONE NUMBER
-                        <input type='text'>
+                    <label for='user_tel'>PHONE NUMBER
+                        <input type='tel' id='user_tel' name='user_tel'>
                     </label>
                 </p>
                 <p class='forms'>
@@ -41,6 +41,13 @@
                 </p>
             </form>
         </div>
+        <div>
+            <p>
+                <button type="submit">Create Account</button>
+            </p>
+            <p class='log-in'>Already have an account? Log in</p>
+        </div>
+  
     </div> 
 </body>
 </html>

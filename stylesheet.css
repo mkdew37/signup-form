@@ -15,12 +15,12 @@ html {
         font-size: 16px; 
 }
 .main {
-    border: 3px solid red;
     width: 60vw;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
+    background-color: whitesmoke;
 }
 h1 {
     font-size: 2rem;
@@ -33,17 +33,16 @@ h2 {
     line-height: 1.2;
     margin-left: 3rem;
 }
-p {
-    font-size: 1.8rem;
-}
+
 .form-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 3rem;
-
+    box-shadow: 4px 4px 10px gray;
+    background-color: white;
 }
 .forms {
     font-size: 1.2rem;
+    margin-left: 3rem;
 }
 label {
     margin-right: 5rem;
@@ -58,15 +57,26 @@ input {
     width: 300px;
     height: 25px;
 }
-input:invalid {
-    border-color: red;
-}
 input:valid {
     border-color: green;
+}
+input[type="password"]:invalid {
+    border-color: red;
 }
 input:focus {
     border-color: lightskyblue;
 }
-
-
+button {
+    background-color: #596D48;
+    color: white;
+    margin-left: 3rem;
+    height: 50px;
+    width: 250px;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+}
+.log-in {
+        font-size: 1.2rem;
+        margin-left: 3rem;
+}
 
