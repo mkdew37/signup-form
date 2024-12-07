@@ -57,14 +57,22 @@ input {
     width: 300px;
     height: 25px;
 }
-input:valid {
-    border-color: green;
-}
-input[type="password"]:invalid {
+input[type="password"]:focus:invalid {
     border-color: red;
+    outline: none;
 }
-input:focus {
-    border-color: lightskyblue;
+input[type="password"]:focus:valid + .error-message {
+    border-color: green;
+    outline: none;
+    display: block;
+}
+input[type="email"]:focus:invalid {
+    border-color: red;
+    outline: none;
+}
+input[type="email"]:focus:valid {
+    border-color: green;
+    outline: none;
 }
 button {
     background-color: #596D48;
@@ -79,4 +87,19 @@ button {
         font-size: 1.2rem;
         margin-left: 3rem;
 }
-
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 40vw;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+a {
+    color: #ffffff;
+}
+a:hover {
+    color: gold;
+}

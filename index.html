@@ -14,18 +14,18 @@
         </h1>
         <h2>Don't we all want to receive nothing for free?</h2>
         <div class='form-container'>
-            <form action='post'>
+            <form action=''>
                 <p class='forms'>
                     <label for='first_name'>*FIRST NAME
-                        <input type="text" id='first_name' name='first_name' required>
+                        <input type="text" id='first_name' name='first_name' required minlength='2'>
                     </label>
                     <label for='last_name'>*LAST NAME
-                        <input type="text" id='last_name' name='last_name' required>
+                        <input type="text" id='last_name' name='last_name' required minlength='2'>
                     </label>
                 </p>
                 <p class='forms'>
                     <label for='email'>*EMAIL
-                        <input type='email' id='email' name='email' required>
+                        <input type='email' id='email' name='email' required pattern='^[a-zA-Z0-9]+@[a-zA-Z0-9]+(\.[a-zA-Z]{2,})$'>
                     </label>
                     <label for='user_tel'>PHONE NUMBER
                         <input type='tel' id='user_tel' name='user_tel'>
@@ -35,19 +35,20 @@
                     <label for='user_password'>*PASSWORD
                         <input type='password' id='user_password' name='user_password' required minlength='12'>
                     </label>
-                    <label for='user_password'>*CONFIRM PASSWORD
-                        <input type='password' id='user_password' name='user_password' required minlength='12'>
+                    <label for='user_confirm_password'>*CONFIRM PASSWORD
+                        <input type='password' id='user_confirm_password' name='user_confirm_password' required minlength='12'>
                     </label>
                 </p>
+                <p>
+                    <button type="submit">Create Account</button>
+                </p>
+                <p class='log-in'>Already have an account? <b>Log in</b></p>
             </form>
         </div>
-        <div>
-            <p>
-                <button type="submit">Create Account</button>
-            </p>
-            <p class='log-in'>Already have an account? Log in</p>
-        </div>
-  
     </div> 
+    <footer>
+        Photo by
+        <a href='https://unsplash.com/@robsonhmorgan'>Robson Hatsukami Morgan</a>
+        on <a href='https://unsplash.com/'>Unsplash</a>.
 </body>
 </html>
